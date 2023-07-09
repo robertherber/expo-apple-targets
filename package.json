@@ -1,6 +1,6 @@
 {
-  "name": "app-2095",
-  "version": "1.0.0",
+  "name": "@kingstinct/expo-apple-targets",
+  "version": "0.0.1",
   "scripts": {
     "start": "expo start --dev-client",
     "android": "expo run:android",
