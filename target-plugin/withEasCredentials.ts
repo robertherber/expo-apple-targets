@@ -9,7 +9,10 @@ function safeSet(obj: any, key: string, value: any) {
     }
     obj = obj[segment];
   });
-  obj[last] = value;
+  // as per https://github.com/EvanBacon/expo-apple-targets/pull/42/files
+  if (!obj[last!]) {
+    obj[last!] = value;
+  }
 
   return obj;
 }
